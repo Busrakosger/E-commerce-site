@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Library</title>
+</head>
+   <body>
+<header class="header">
+    <div class="container">
+
+    
+
+        <nav class="menu">
+          <ul>
+
+             <li><a href="index.html">Anasayfa</a></li>
+          
+             <li><a href="kategoriler.html">Kategoriler</a></li>
+          
+             <li><a href="sepet.html">Sepet</a></li>
+          
+          
+             <li><a href="iletisim.html">İletişim</a></li>
+            </ul>  
+    
+        </nav>
+
+        <div class="search">
+         <input type="text" placeholder="Arama..">
+         <button type="submit"><i class="fa fa-search"></i></button>
+
+        </div>
+
+        <nav class="login-buttons">
+          <ul>
+             <li class="join-now-btn">
+                <a href="giris.html">Giriş Yap</a>
+             </li>
+             <li>
+                <a href="kayit.html">Kayıt Ol</a>
+             </li>
+            </ul>
+
+        </nav>
+    
+
+
+    
+    </div>
+
+    
+</header>
+
+<section>
+
+<div class="container-giris">
+
+    <img src="login.png">
+    <form action="/register" method="post">
+      <label for="username">Kullanıcı adı</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Şifre</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit"  value="Giriş Yap" id="loginBtn">
+    </form>
+    <p>Hesabınız yok mu? <a href="kayit.html">Kayıt Ol</a></p>
+  </div>
+
+</section>
+
+<script>
+    document.getElementById("loginBtn").addEventListener("click", function() {
+      // Giriş yap butonuna tıklandığında anasayfaya yönlendirme yapılır
+      window.location.href = "index.html";
+    });
+  </script>
+
+<footer class="footer">
+
+  <div class="container">
+
+  <div class="footer-nav">
+      <nav>
+          <ul>
+              <li>
+                  <a href="#">
+                      SSS
+
+                  </a>
+                  <a href="#">
+                      Nakliye&İade
+                      
+                  </a>
+                  <a href="#">
+                      Mağaza Politikası
+                  </a>
+                  <a href="#">
+                      Ödeme Seçenekleri
+                  </a>
+              </li>
+          </ul>
+      </nav>
+      </div>
+
+      
+
+  </div>
+ </div>
+ 
+  <div class="footer-nav-2">
+      <nav>
+          <ul>
+              <li>
+                  <a href="https://tr-tr.facebook.com/">
+                  <img src="face.png" alt=""></a>
+
+                  <a href="https://twitter.com/busbusbiri">
+                  <img src="twit.png" alt=""></a>
+
+                  <a href="https://www.instagram.com/">
+                  <img src="insta.png" alt=""></a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+
+<div class="yazi">
+  <h3>Büşra Köşger © 2023 Tüm Hakları Saklıdır.</h3>
+
+</div>
+
+</footer>
+    
+</body>
+</html>

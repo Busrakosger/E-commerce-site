@@ -1,0 +1,542 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Library</title>
+</head>
+   <body>
+    <header class="header">
+      <div class="container">
+  
+      
+  
+          <nav class="menu">
+            <ul>
+  
+               <li><a href="index.html">Anasayfa</a></li>
+            
+               <li><a href="kategoriler.html">Kategoriler</a></li>
+                   
+            
+               <li><a href="iletisim.html">İletişim</a></li>
+              </ul>  
+      
+          </nav>
+  
+          <div class="search">
+           <input type="text" placeholder="Arama..">
+           <button type="submit"><i class="fa fa-search"></i></button>
+  
+          </div>
+  
+          <nav class="login-buttons">
+            <ul>
+               <li class="join-now-btn">
+                  <a href="giris.html">Giriş Yap</a>
+               </li>
+               <li>
+                  <a href="kayit.html">Kayıt Ol</a>
+               </li>
+  
+               <li>
+               <a href="sepet.html"><span class="cart-icon">&#128722;</span></a>
+  
+               </li>
+              </ul>
+  
+  
+          </nav>
+      
+  
+  
+      
+      </div>
+  
+      
+  </header>
+
+<section class="book-list">
+    <h2>Çok Satan Kitaplar</h2>
+    <form>
+    <ul>
+      <li>
+        <a href="#">
+        <img src="book/book1.png" alt="Gece Yarısı Kütüphanesi">
+        <p>Yazar: Matt Haig</p>
+        <p>Fiyat: 39.90 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+   
+
+    <li>
+      <a href="#">
+      <img src="book/book2.jpg" alt="Pal Sokağı Çocukları">
+      <p>Yazar: Ferenc Molnar</p>
+      <p>Fiyat: 15.81 TL</p></a>
+      <br>
+      Miktar:<select id="quantity" name="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>  
+
+      
+    </li>
+  </select>
+       
+    <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+    <span class="cart-icon">&#128722;</span>
+  
+
+  <li>
+    <a href="#">
+    <img src="book/book3.png" alt="Kuru Kız">
+    <p>Yazar: Ayfer Tunç</p>
+    <p>Fiyat: 57.20 TL</p></a>
+    <br>
+    Miktar:<select id="quantity" name="quantity">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>  
+
+    
+  </li>
+</select>
+     
+  <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+  <span class="cart-icon">&#128722;</span>
+
+
+</form>
+    </ul>  
+</section>
+
+<section class="book-list">
+    <h2>Türk Edebiyatı</h2>
+    <form>
+    <ul>
+      <li>
+        <a href="#">
+        <img src="book/book4.jpg" alt="Dokuzuncu Hariciye Koğuşu">
+        <p>Yazar: Peyami Safa</p>
+        <p>Fiyat: 24.00 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+   
+   
+      <li>
+        <a href="#">
+        <img src="book/book5.png" alt="Çalıkuşu">
+        <p>Yazar: Reşat Nuri Güntekin</p>
+        <p>Fiyat: 34.00 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+      <li>
+        <a href="#">
+        <img src="book/book6.jpg" alt="Saatleri Ayarlama Enstitüsü">
+        <p>Yazar: Ahmet Hamdi Tanpınar</p>
+        <p>Fiyat: 64.00 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+    </form>
+    </ul>
+  </section>
+
+  <section class="book-list">
+    <h2>Kişisel Gelişim</h2>
+    <form>
+    <ul>
+      <li>
+        <a href="#">
+        <img src="book/book7.png" alt="Hayatın Kaynağı">
+        <p>Yazar: Ayn Rand</p>
+        <p>Fiyat: 55.00 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+   
+   
+      <li>
+        <a href="#">
+        <img src="book/book8.jpg" alt="Nasıl Yaşarsak Öyle Ölürüz">
+        <p>Yazar: Pema Chödrön</p>
+        <p>Fiyat: 58.50 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+      <li>
+        <a href="#">
+        <img src="book/book9.jpg" alt="Kendini Unutma">
+        <p>Yazar: Prof. Dr. Halis Aydemir</p>
+        <p>Fiyat: 68.00 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+    </form>
+    </ul>
+  </section>
+
+  <section class="book-list">
+    <h2>Tarih</h2>
+    <form>
+    <ul>
+      <li>
+        <a href="#">
+        <img src="book/book10.png" alt="Milli Mücadele Tarihi">
+        <p>Yazar: Prof. Dr. Halil İnalcık</p>
+        <p>Fiyat: 44.60 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+   
+   
+      <li>
+        <a href="#">
+        <img src="book/book11.jpg" alt="Gazi Mustafa Kemal Atatürk">
+        <p>Yazar: Prof. Dr. İlber Ortaylı</p>
+        <p>Fiyat: 79.50 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+      <li>
+        <a href="#">
+        <img src="book/book12.jfif" alt="İnsanlığın Medeniyet Destanı">
+        <p>Yazar: Roger Garaudy</p>
+        <p>Fiyat: 62.00 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+    </form>
+    </ul>
+  </section>
+
+  <section class="book-list">
+    <h2>Felsefe-Düşünce</h2>
+    <formi>
+    <ul>
+      <li>
+        <a href="#">
+        <img src="book/book13.jpeg" alt="İnsanın Anlam Arayışı">
+        <p>Yazar: Viktor Emil Frankl</p>
+        <p>Fiyat: 54.80 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+   
+   
+      <li>
+        <a href="#">
+        <img src="book/book14.png" alt="21. Yüzyıl için Tanrı">
+        <p>Yazar: Russell Stannard</p>
+        <p>Fiyat: 52.50 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+      <li>
+        <a href="#">
+        <img src="book/book15.jpg" alt="Çürümenin Kitabı">
+        <p>Yazar: Russell Stannard</p>
+        <p>Fiyat: 42.00 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+    </form>
+    </ul>
+  </section>
+
+  <section class="book-list">
+    <h2>Polisiye</h2>
+    <formi>
+    <ul>
+      <li>
+        <a href="#">
+        <img src="book/book16.jpg" alt="Akıl Oyunlarının Gölgesinde - Sherlock Holmes">
+        <p>Yazar: Sir Arthur Conan Doyle</p>
+        <p>Fiyat: 29.90 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+   
+   
+      <li>
+        <a href="#">
+        <img src="book/book17.jpg" alt="On Kişiydiler(On Küçük Zenci)">
+        <p>Yazar: Agatha Christie</p>
+        <p>Fiyat: 58.50 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+      <li>
+        <a href="#">
+        <img src="book/book18.jpg" alt="Kuzgun">
+        <p>Yazar: Filiz Puluç</p>
+        <p>Fiyat: 57.60 TL</p></a>
+        <br>
+        Miktar:<select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>  
+    
+        
+      </li>
+    </select>
+         
+      <button onclick="addToCart()" class="buton2">Sepete Ekle</button>
+      <span class="cart-icon">&#128722;</span>
+
+    </form>
+    </ul>
+  </section>
+
+    <footer class="footer">
+
+        <div class="container">
+        
+        <div class="footer-nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            SSS
+
+                        </a>
+                        <a href="#">
+                            Nakliye&İade
+                            
+                        </a>
+                        <a href="#">
+                            Mağaza Politikası
+                        </a>
+                        <a href="#">
+                            Ödeme Seçenekleri
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+            
+
+        </div>
+       </div>
+       
+        <div class="footer-nav-2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://tr-tr.facebook.com/">
+                        <img src="face.png" alt=""></a>
+
+                        <a href="https://twitter.com/busbusbiri">
+                        <img src="twit.png" alt=""></a>
+
+                        <a href="https://www.instagram.com/">
+                        <img src="insta.png" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="yazi">
+        <h3>Büşra Köşger © 2023 Tüm Hakları Saklıdır.</h3>
+
+    </div>
+   
+    </footer>
+
+    <script>
+
+      function addToCart() {
+        // Add code to add the book to the cart here
+        alert('Kitap Sepete Eklendi!');
+      }
+    </script>
+    
+</body>
+</html>

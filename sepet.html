@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Library</title>
+</head>
+   <body>
+    <script src="script.js"></script>
+<header class="header">
+    <div class="container">
+
+    
+
+        <nav class="menu">
+          <ul>
+
+             <li><a href="index.html">Anasayfa</a></li>
+          
+             <li><a href="kategoriler.html">Kategoriler</a></li>
+                 
+          
+             <li><a href="iletisim.html">İletişim</a></li>
+            </ul>  
+    
+        </nav>
+
+        <div class="search">
+         <input type="text" placeholder="Arama..">
+         <button type="submit"><i class="fa fa-search"></i></button>
+
+        </div>
+
+        <nav class="login-buttons">
+          <ul>
+             <li class="join-now-btn">
+                <a href="giris.html">Giriş Yap</a>
+             </li>
+             <li>
+                <a href="kayit.html">Kayıt Ol</a>
+             </li>
+
+             <li>
+             <a href="sepet.html"><span class="cart-icon">&#128722;</span></a>
+
+             </li>
+            </ul>
+
+
+        </nav>
+    
+
+
+    
+    </div>
+
+  </header>
+
+  <div id="orta">
+    <h5><b class="cart-icon">&#128722;</b></h5>
+    <h4>Alışveriş Sepetiniz Boş</h4>
+    <h6>Biraz Gezinmeye Ne Dersin?</h6>
+
+    <a href="kategoriler.html" class="button">Alışverişe Başla</a>
+
+  </div>
+
+
+<section id="altslider">
+
+
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slider-item"><img src="book/book1.png"></div>
+          <div class="slider-item"> <img src="book/book2.jpg"></div>
+          <div class="slider-item"><img src="book/book3.png"></div>
+          <div class="slider-item"><img src="book/book4.jpg"></div>
+          <div class="slider-item"><img src="book/book5.png"></div>
+          <div class="slider-item"><img src="book/book6.jpg"></div>
+          <div class="slider-item"><img src="book/book7.png"></div>
+          <div class="slider-item"><img src="book/book8.jpg"></div>
+          <div class="slider-item"><img src="book/book9.jpg"></div>
+          <div class="slider-item"><img src="book/book10.png"></div>
+          <div class="slider-item"><img src="book/book11.jpg"></div>
+          <div class="slider-item"><img src="book/book12.jfif"></div>
+          <div class="slider-item"><img src="book/book13.jpeg"></div>
+          <div class="slider-item"><img src="book/book14.png"></div>
+          <div class="slider-item"><img src="book/book15.jpg"></div>
+          <div class="slider-item"><img src="book/book16.jpg"></div>
+          <div class="slider-item"><img src="book/book17.jpg"></div>
+          <div class="slider-item"><img src="book/book18.jpg"></div>
+        </div>
+      </div>
+    
+      <div class="slider-controls">
+        <button onclick="slidePrev()"> <i class="fa fa-chevron-left"></i></button>
+        <button onclick="slideNext()"><i class="fa fa-chevron-right"></i></button>
+      </div>
+    
+      <script>
+        var slider = document.querySelector('.slider');
+        var sliderItems = document.querySelectorAll('.slider-item');
+        var currentIndex = 0;
+        var itemWidth = sliderItems[0].offsetWidth;
+        var totalItems = sliderItems.length;
+    
+        function slideNext() {
+          if (currentIndex === totalItems - 1) {
+            currentIndex = 0;
+          } else {
+            currentIndex++;
+          }
+          updateSlider();
+        }
+    
+        function slidePrev() {
+          if (currentIndex === 0) {
+            currentIndex = totalItems - 1;
+          } else {
+            currentIndex--;
+          }
+          updateSlider();
+        }
+    
+        function updateSlider() {
+          var translateXValue = -currentIndex * itemWidth;
+          slider.style.transform = `translateX(${translateXValue}px)`;
+        }
+      </script>
+
+
+</section>
+  
+ 
+
+
+    
+
+    </div>
+
+    
+    <footer class="footer">
+
+        <div class="container">
+
+        <div class="footer-nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            SSS
+
+                        </a>
+                        <a href="#">
+                            Nakliye&İade
+                            
+                        </a>
+                        <a href="#">
+                            Mağaza Politikası
+                        </a>
+                        <a href="#">
+                            Ödeme Seçenekleri
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+            
+
+        </div>
+       </div>
+       
+        <div class="footer-nav-2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://tr-tr.facebook.com/">
+                        <img src="face.png" alt=""></a>
+
+                        <a href="https://twitter.com/busbusbiri">
+                        <img src="twit.png" alt=""></a>
+
+                        <a href="https://www.instagram.com/">
+                        <img src="insta.png" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="yazi">
+        <h3>Büşra Köşger © 2023 Tüm Hakları Saklıdır.</h3>
+
+    </div>
+   
+    </footer>
+    
+</body>
+</html>
